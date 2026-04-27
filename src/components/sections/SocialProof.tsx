@@ -4,7 +4,7 @@ import { useCountUp } from "../../hooks/useCountUp";
 const companies = [
   "Acc 'N' More",
   "Vadivel & Co",
-  "Redington Partners",
+  "Purrfect Supplies Co.",
   "FinEdge Advisory",
 ];
 

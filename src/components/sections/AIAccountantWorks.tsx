@@ -87,10 +87,10 @@ const steps = [
         <div className="rounded-xl border border-zinc-700 bg-zinc-800 p-5">
           <p className="mb-3 text-xs font-mono text-zinc-400 uppercase">OCR Extraction</p>
           <div className="rounded-lg bg-zinc-900 border border-zinc-700 p-4 font-mono text-xs text-zinc-400 leading-loose italic mb-4">
-            "Redington Pvt Ltd<br/>Inv #847 — ₹48,250<br/>Date: 12-Jan-24"
+            "Purrfect Supplies Pvt Ltd<br/>Inv #847 — ₹48,250<br/>Date: 12-Jan-24"
           </div>
           <div className="space-y-2">
-            {[["Vendor", "Redington Pvt Ltd"], ["Amount", "₹48,250"], ["Date", "12 Jan 2024"]].map(([k, v]) => (
+            {[["Vendor", "Purrfect Supplies Pvt Ltd"], ["Amount", "₹48,250"], ["Date", "12 Jan 2024"]].map(([k, v]) => (
               <div key={k} className="flex justify-between">
                 <span className="text-xs text-zinc-500">{k}</span>
                 <span className="text-xs text-white font-medium flex items-center gap-1"><CheckCircle size={10} className="text-green-400" />{v}</span>
@@ -121,7 +121,7 @@ const steps = [
           <p className="mb-3 text-xs font-mono text-zinc-400 uppercase">Auto-Mapping</p>
           <div className="space-y-3">
             {[
-              { tx: "Redington — ₹48,250", ledger: "Purchase A/c", match: "99%" },
+              { tx: "Purrfect Supplies — ₹48,250", ledger: "Purchase A/c", match: "99%" },
               { tx: "HDFC Credit Card", ledger: "Bank Charges", match: "97%" },
               { tx: "Savex Distrib.", ledger: "Purchase A/c", match: "95%" },
             ].map((row, i) => (

@@ -7,7 +7,7 @@ type Step = (typeof STEPS)[number];
 const STEP_DURATION = 3000; // ms per step
 
 const invoiceRows = [
-  { label: "Vendor", value: "Redington Partners", color: "text-orange-400" },
+  { label: "Vendor", value: "Purrfect Supplies Co.", color: "text-orange-400" },
   { label: "Invoice No", value: "INV-2024-0847", color: "text-white" },
   { label: "Amount", value: "₹4,82,500.00", color: "text-green-400" },
   { label: "GSTIN", value: "29AABCR1234F1Z5", color: "text-zinc-300" },
@@ -44,7 +44,7 @@ function UploadStep({ active }: { active: boolean }) {
           </span>
         )}
       </div>
-      <p className="mt-4 text-sm font-medium text-white">invoice_redington_jan.pdf</p>
+      <p className="mt-4 text-sm font-medium text-white">invoice_purrfect_jan.pdf</p>
       <p className="mt-1 text-xs text-zinc-500">2.4 MB · PDF</p>
       <div className="mt-6 w-full max-w-xs">
         <div className="mb-1.5 flex justify-between text-xs text-zinc-400">
@@ -119,7 +119,7 @@ function PushStep({ active }: { active: boolean }) {
         <div className="space-y-2 text-xs">
           <div className="flex justify-between">
             <span className="text-zinc-500">Party Ledger</span>
-            <span className="text-white font-medium">Redington Partners</span>
+            <span className="text-white font-medium">Purrfect Supplies Co.</span>
           </div>
           <div className="flex justify-between">
             <span className="text-zinc-500">Voucher Type</span>

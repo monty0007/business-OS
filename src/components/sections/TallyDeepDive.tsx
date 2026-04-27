@@ -61,7 +61,7 @@ function TallyMockup() {
         <div className="rounded-lg bg-surface-2 p-3">
           <p className="text-xs text-zinc-500 mb-1">Party Ledger</p>
           <div className="flex items-center justify-between">
-            <span className="text-sm text-white">Redington Partners</span>
+            <span className="text-sm text-white">Purrfect Supplies Co.</span>
             <span className="text-[10px] text-zinc-500 font-mono">29AABCR1234F1Z5</span>
           </div>
         </div>
