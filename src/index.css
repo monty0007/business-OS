@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #ea580c;
+  --accent-light: #fb923c;
+  --accent-glow: rgba(234, 88, 12, 0.18);
+  --bg-orange: #ea580c;
+  --bg-orange-dark: #c2410c;
+  --bg-orange-light: #f97316;
+  --surface: #ffffff;
+  --surface-2: #f8fafc;
+  --surface-dark: #18181b;
+  --border: rgba(0, 0, 0, 0.08);
+  --text-primary: #18181b;
+  --text-muted: #71717a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-orange);
+  color: var(--text-primary);
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-orange);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+@layer utilities {
+  .glass-card {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .glass-card-dark {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(24, 24, 27, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .text-gradient-orange {
+    background: linear-gradient(135deg, #c2410c, #ea580c, #f97316);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-card {
+    background: #ffffff;
+    border-radius: 0;
+  }
+
+  .section-card-dark {
+    background: #18181b;
+    border-radius: 0;
+  }
+}
+
+::selection {
+  background: rgba(234, 88, 12, 0.3);
+  color: #ffffff;
+}
